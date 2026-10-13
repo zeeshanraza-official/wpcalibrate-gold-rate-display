@@ -1,0 +1,10 @@
+/**
+ * Gutenberg Block Editor Styles
+ */
+.wpcalibrate-grd-editor-preview {
+	border: 1px dashed #cbd5e1;
+	border-radius: 8px;
+	padding: 12px;
+	background: #f8fafc;
+	margin: 12px 0;
+}

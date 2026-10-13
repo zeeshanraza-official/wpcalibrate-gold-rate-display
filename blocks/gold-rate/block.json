@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpcalibrate/gold-rate",
+  "version": "1.0.0",
+  "title": "Gold Rate Display",
+  "category": "widgets",
+  "icon": "money-alt",
+  "description": "Display live gold prices and karat rates powered by WPCalibrate.",
+  "keywords": [ "gold", "rate", "price", "karat", "metalpriceapi" ],
+  "textdomain": "wpcalibrate-gold-rate-display",
+  "attributes": {
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "unit": {
+      "type": "string",
+      "default": "gram"
+    },
+    "layout": {
+      "type": "string",
+      "default": "cards"
+    },
+    "karats": {
+      "type": "string",
+      "default": "24K,22K,21K,18K"
+    },
+    "show_spot": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_change": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_updated": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "editorScript": "wpcalibrate-grd-block-editor",
+  "editorStyle": "wpcalibrate-grd-block-editor-style"
+}
